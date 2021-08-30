@@ -3,11 +3,10 @@ package ru.job4j.array;
 public class MatrixSum {
     public static int sum(int[][] array) {
         int rsl = 0;
-        for (int index = 0; index < array.length; index++) {
-            for (int indexInner = 0; indexInner < array[index].length; indexInner++) {
-                rsl += array[index][indexInner];
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                rsl += array[i][j];
             }
-
         }
         return rsl;
     }
